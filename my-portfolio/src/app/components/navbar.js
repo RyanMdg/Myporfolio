@@ -12,7 +12,7 @@ const navbar = () => {
     <nav className=" py-4">
       <div className="  flex justify-between items-center mx-8">
         <img
-          className=" w-[2%] min-[320px]:w-[10%] max-[750px]:w-[4%]"
+          className=" min-[320px]:w-[10%] min-[350px]:w-[10%] min-[440px]:w-[7%] min-[550px]:w-[5%] min-[650px]:w-[3%] min-[800px]:w-[2%] "
           src="/logo.png"
           alt=""
         />
@@ -68,7 +68,7 @@ const navbar = () => {
             &#x2715;
           </div>
         </button>
-        <ul className="flex text-[#B5BFDF] min-[320px]:me-[5rem]  flex-col items-center me-[9rem]  p-2 uppercase gap-10  pt-12">
+        <ul className="flex text-[#B5BFDF] min-[320px]:me-[5rem] min-[350px]:me-[5rem] min-[440px]:me-[7rem] min-[550px]:me-[9rem] min-[650px]:me-[12rem]  flex-col items-center me-[9rem]  p-2 uppercase gap-10  pt-12">
           <a href="">
             <li className=" text-center">
               {" "}
