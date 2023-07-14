@@ -64,7 +64,7 @@ const navbar = () => {
             alt=""
           />
 
-          <div className=" absolute left-[150%] min-[320px]:left-[98%] top-[.5rem] text-[#5FF4D2]  text-[1.5rem]">
+          <div className=" absolute left-[150%] min-[320px]:left-[98%] min-[350px]:left-[120%] min-[440px]:left-[150%] min-[550px]:left-[190%] min-[650px]:left-[225%] top-[.5rem] text-[#5FF4D2]  text-[1.5rem]">
             &#x2715;
           </div>
         </button>
