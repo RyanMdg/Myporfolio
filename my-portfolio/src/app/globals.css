@@ -19,3 +19,60 @@
 body {
   background-color: #0a192f;
 }
+
+@keyframes typing {
+  0% {
+    width: 0%;
+
+    visibility: hidden;
+  }
+  100% {
+    width: 37%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: white;
+  }
+}
+
+@keyframes span {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-span {
+  animation: span 2s;
+}
+
+.animate-typing {
+  animation: typing 2s steps(20) infinite alternate, blink 0.7s infinite;
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(rgb(198, 184, 25), rgb(249, 227, 36));
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+}

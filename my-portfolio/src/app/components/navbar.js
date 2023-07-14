@@ -1,5 +1,8 @@
 "use client";
-import "../globals.css";
+
+import { GoPerson } from "react-icons/go";
+import { CgWebsite } from "react-icons/cg";
+import { BiSolidContact } from "react-icons/bi";
 import { useState } from "react";
 
 const navbar = () => {
@@ -17,7 +20,7 @@ const navbar = () => {
           alt=""
         />
         {/* Hamburger Icon */}
-        <div className="min-[750px]:hidden flex items-center">
+        <div className="min-[750px]:hidden min-[320px]:ms-[19rem] min-[350px]:ms-[19rem] flex items-center">
           <button
             type="button"
             className="text-[#5FF4D2] text-[2rem]  focus:outline-none"
@@ -27,21 +30,22 @@ const navbar = () => {
           </button>
         </div>
 
-        <ul className=" max-[750px]:hidden text-[#B5BFDF] gap-4 flex font-semibold">
+        <ul className=" max-[750px]:hidden text-[#B5BFDF] gap-6 flex font-semibold">
           <a href="">
-            <li>
+            <li className="flex items-center pb-1 gap-2 link link-underline link-underline-black  ">
               {" "}
-              <span className=" text-[#5FF4D2] pe-2">01.</span>About
+              <GoPerson className=" text-[1.2rem] text-[#FFD700]" /> About me
             </li>
           </a>
           <a href="">
-            <li>
-              <span className=" text-[#5FF4D2] pe-2">02.</span>Projects
+            <li className="flex items-center pb-1 gap-2 link link-underline link-underline-black  ">
+              <CgWebsite className=" text-[1.2rem] text-[#FFD700]" /> Projects
             </li>
           </a>
           <a href="">
-            <li>
-              <span className=" text-[#5FF4D2] pe-2">03.</span>Contact
+            <li className="flex items-center pb-1 gap-2 link link-underline link-underline-black  ">
+              <BiSolidContact className=" text-[1.2rem] text-[#FFD700]" />{" "}
+              Contact
             </li>
           </a>
         </ul>
@@ -68,11 +72,11 @@ const navbar = () => {
             &#x2715;
           </div>
         </button>
-        <ul className="flex text-[#B5BFDF] min-[320px]:me-[5rem] min-[350px]:me-[5rem] min-[440px]:me-[7rem] min-[550px]:me-[9rem] min-[650px]:me-[12rem]  flex-col items-center me-[9rem]  p-2 uppercase gap-10  pt-12">
+        <ul className="flex text-[#B5BFDF] min-[320px]:me-[5rem] min-[350px]:me-[5rem] min-[440px]:me-[7rem] min-[550px]:me-[9rem] min-[650px]:me-[12rem]  flex-col items-center me-[9rem]  p-2 uppercase gap-10  pt-12 ">
           <a href="">
-            <li className=" text-center">
+            <li className=" text-center  ">
               {" "}
-              <span className=" text-[#5FF4D2] pe-2">01.</span> <br />
+              <span className=" text-[#5FF4D2]  pe-2">01.</span> <br />
               About
             </li>
           </a>
@@ -84,11 +88,11 @@ const navbar = () => {
             </li>
           </a>
           <a href="">
-            <li className=" text-center">
+            <h1 className=" text-center ">
               {" "}
               <span className=" text-[#5FF4D2] pe-2">03.</span> <br />
               Contact
-            </li>
+            </h1>
           </a>
         </ul>
       </div>
