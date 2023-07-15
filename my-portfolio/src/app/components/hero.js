@@ -1,3 +1,5 @@
+import Aboutme from "./aboutme";
+
 const Hero = () => {
   return (
     <div className="flex min-h-screen max-[320px]:ms-[1rem] max-[750px]:ms-[2rem] max-w-[70rem] mx-auto my-[5rem]">
@@ -22,6 +24,7 @@ const Hero = () => {
             Check out my projects!
           </span>
         </button>
+        <Aboutme />
       </div>
     </div>
   );

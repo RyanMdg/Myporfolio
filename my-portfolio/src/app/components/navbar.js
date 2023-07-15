@@ -72,7 +72,7 @@ const navbar = () => {
             &#x2715;
           </div>
         </button>
-        <ul className="flex text-[#B5BFDF] mt-10 min-[320px]:me-[7rem] min-[350px]:me-[5rem] min-[440px]:me-[7rem] min-[550px]:me-[9rem] min-[650px]:me-[12rem]  flex-col items-center me-[9rem]  p-2 uppercase gap-10  pt-12 ">
+        <ul className="flex text-[#B5BFDF] mt-10 min-[320px]:me-[8rem] min-[350px]:me-[8rem] min-[440px]:me-[8rem] min-[550px]:me-[9rem] min-[650px]:me-[12rem]  flex-col items-center me-[9rem]  p-2 uppercase gap-10  pt-12 ">
           <a href="">
             <li className="flex items-center font-semibold text-[1.3rem] pb-1 gap-2 link link-underline link-underline-black  ">
               {" "}
