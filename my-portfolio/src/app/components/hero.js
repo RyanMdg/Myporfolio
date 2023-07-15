@@ -11,7 +11,7 @@ const Hero = () => {
         <h1 className="text-5xl transition-all mb-5  text-[#8892B0] font-bold animate-span ">
           I build things for the web.
         </h1>
-        <p className="  text-[#8892B0] pr-[30rem] min-[320px]:pr-[1rem] mb-10">
+        <p className="  text-[#8892B0] pr-[30rem] min-[320px]:pr-[3rem] mb-10">
           I'm a self-taught front-end developer, and I'm passionate about
           creating engaging and intuitive web experiences. With a keen eye for
           design and a strong understanding of web technologies.
