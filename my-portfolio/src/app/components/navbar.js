@@ -53,7 +53,7 @@ const navbar = () => {
 
       {/* FOR MENU HAMBURGER */}
       <div
-        className={`fixed top-0 left-[10rem] min-[320px]:left-[30%]   h-screen w-[100%] bg-[#112240] z-50 transform duration-300 ease-in-out  ${
+        className={`fixed top-0 left-[10rem] min-[320px]:left-[30%] h-full    w-[100%] bg-[#112240] z-50 transform duration-300 ease-in-out  ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -68,31 +68,26 @@ const navbar = () => {
             alt=""
           />
 
-          <div className=" absolute left-[150%] min-[320px]:left-[98%] min-[350px]:left-[120%] min-[440px]:left-[150%] min-[550px]:left-[190%] min-[650px]:left-[225%] top-[.5rem] text-[#5FF4D2]  text-[1.5rem]">
+          <div className=" absolute left-[150%] min-[700px]:left-[235%]  min-[670px]:left-[230%] top-[.5rem] text-[#5FF4D2]  text-[1.5rem]">
             &#x2715;
           </div>
         </button>
-        <ul className="flex text-[#B5BFDF] min-[320px]:me-[5rem] min-[350px]:me-[5rem] min-[440px]:me-[7rem] min-[550px]:me-[9rem] min-[650px]:me-[12rem]  flex-col items-center me-[9rem]  p-2 uppercase gap-10  pt-12 ">
+        <ul className="flex text-[#B5BFDF] mt-10 min-[320px]:me-[7rem] min-[350px]:me-[5rem] min-[440px]:me-[7rem] min-[550px]:me-[9rem] min-[650px]:me-[12rem]  flex-col items-center me-[9rem]  p-2 uppercase gap-10  pt-12 ">
           <a href="">
-            <li className=" text-center  ">
+            <li className="flex items-center font-semibold text-[1.3rem] pb-1 gap-2 link link-underline link-underline-black  ">
               {" "}
-              <span className=" text-[#5FF4D2]  pe-2">01.</span> <br />
-              About
+              <GoPerson className=" text-[2rem] text-[#FFD700]" /> About me
             </li>
           </a>
           <a href="">
-            <li className=" text-center">
-              {" "}
-              <span className=" text-[#5FF4D2] pe-2">02.</span> <br />
-              Projects
+            <li className="flex items-center text-[1.3rem] font-semibold pb-1 gap-2 link link-underline link-underline-black  ">
+              <CgWebsite className=" text-[2rem] text-[#FFD700]" /> Projects
             </li>
           </a>
           <a href="">
-            <h1 className=" text-center ">
-              {" "}
-              <span className=" text-[#5FF4D2] pe-2">03.</span> <br />
-              Contact
-            </h1>
+            <li className="flex items-center font-semibold text-[1.3rem] pb-1 gap-2 link link-underline link-underline-black  ">
+              <BiSolidContact className=" text-[2rem] text-[#FFD700]" /> Contact
+            </li>
           </a>
         </ul>
       </div>
