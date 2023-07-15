@@ -12,7 +12,7 @@ const navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <nav className=" py-4">
+    <nav className=" py-8">
       <div className="  flex justify-between items-center mx-8">
         <img
           className=" min-[320px]:w-[10%] min-[350px]:w-[10%] min-[440px]:w-[7%] min-[550px]:w-[5%] min-[650px]:w-[3%] min-[800px]:w-[2%] "
@@ -23,7 +23,7 @@ const navbar = () => {
         <div className="min-[750px]:hidden min-[320px]:ms-[19rem] min-[350px]:ms-[19rem] flex items-center">
           <button
             type="button"
-            className="text-[#5FF4D2] text-[2rem]  focus:outline-none"
+            className="text-[#FFD700] text-[2rem]  focus:outline-none"
             onClick={toggleMenu}
           >
             &#8801;
@@ -68,7 +68,7 @@ const navbar = () => {
             alt=""
           />
 
-          <div className=" absolute left-[150%] min-[700px]:left-[235%]  min-[670px]:left-[230%] top-[.5rem] text-[#5FF4D2]  text-[1.5rem]">
+          <div className=" absolute left-[150%] min-[700px]:left-[235%]  min-[670px]:left-[230%] top-[.5rem] text-[#FFD700]  text-[1.5rem]">
             &#x2715;
           </div>
         </button>

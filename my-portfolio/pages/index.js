@@ -1,6 +1,7 @@
 import "../src/app/globals.css";
 import Navbar from "../src/app/components/navbar";
 import Lefticons from "../src/app/components/lefticons";
+import Righticon from "../src/app/components/righticon";
 import Hero from "../src/app/components/hero";
 import { Montserrat } from "next/font/google";
 
@@ -10,7 +11,11 @@ const home = () => {
   return (
     <main className={inter.className}>
       <Navbar />
-      <Lefticons />
+
+      <div className=" max-w-[96%]  flex justify-between">
+        <Lefticons />
+        <Righticon />
+      </div>
       <Hero />
     </main>
   );
