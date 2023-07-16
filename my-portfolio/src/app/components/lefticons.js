@@ -7,7 +7,7 @@ import {
 
 const icons = () => {
   return (
-    <div className=" max-[700px]:hidden ms-2">
+    <div className=" max-[750px]:hidden ms-2">
       <div className=" text-[1.8rem] flex ms-[.1rem] flex-col gap-4 p-2 fixed justify-center h-screen">
         <AiOutlineGithub className=" text-[#B5BFDF]" />
         <AiOutlineInstagram className=" text-[#B5BFDF]" />

@@ -59,16 +59,16 @@ const navbar = () => {
       >
         <button
           type="button"
-          className="text-gray-500 screen2:text-[2rem] text-2xl flex items-center justify-center relative top-4 right-4 focus:outline-none"
+          className="text-gray-500  text-2xl flex items-center justify-center relative top-4 right-4 focus:outline-none"
           onClick={toggleMenu}
         >
           <img
-            className="w-[40%] ms-[12rem]  screen2:w-[65%] screen3:w-[45%] object-contain flex-none"
+            className="w-[40%] ms-[12rem] object-contain flex-none"
             src="/brnd.png"
             alt=""
           />
 
-          <div className=" absolute left-[150%] min-[700px]:left-[235%]  min-[670px]:left-[230%] top-[.5rem] text-[#FFD700]  text-[1.5rem]">
+          <div className=" absolute max-[750px]:left-[250%] max-[650px]:left-[230%] max-[550px]:left-[180%]  max-[450px]:left-[150%]   top-[.5rem] text-[#FFD700]  text-[1.5rem]">
             &#x2715;
           </div>
         </button>

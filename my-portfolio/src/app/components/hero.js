@@ -1,8 +1,21 @@
 import Aboutme from "./aboutme";
+import Projects from "./projects";
+import Getintouch from "./getintouch";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // Animation duration
+      easing: "ease-out-quart", // Easing function
+      once: true, // Whether animation should trigger only once
+    });
+  }, []);
+
   return (
-    <div className="flex min-h-screen max-[320px]:ms-[1rem] max-[750px]:ms-[2rem] max-w-[70rem] mx-auto my-[5rem]">
+    <div className="flex min-h-screen max-[320px]:ms-[1rem] md:max-w-[40rem] max-[750px]:ms-[2rem] lg:max-w-[70rem] mx-auto my-[5rem]">
       <div className="w-max">
         <h1 className="text-[#ffd900c7] animate-span text-[1.1rem]">
           Hi, my name is
@@ -24,7 +37,15 @@ const Hero = () => {
             Check out my projects!
           </span>
         </button>
-        <Aboutme />
+        <div data-aos="fade-up">
+          <Aboutme />
+        </div>
+        <div data-aos="fade-up">
+          <Projects />
+        </div>
+        <div data-aos="fade-up">
+          <Getintouch />
+        </div>
       </div>
     </div>
   );

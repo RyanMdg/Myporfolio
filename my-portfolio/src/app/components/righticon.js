@@ -1,6 +1,6 @@
 const icons = () => {
   return (
-    <div className=" max-[700px]:hidden ms-2">
+    <div className=" max-[750px]:hidden ms-2">
       <div className=" relative top-[21rem] right-[5.7rem]">
         <h1 className="  rotate-90 fixed text-[#B5BFDF] ">
           Ryandeguia.dev@gmail.com

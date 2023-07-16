@@ -3,9 +3,9 @@ import { BiRightArrow } from "react-icons/bi";
 const aboutme = () => {
   return (
     <div>
-      <h1 className=" flex text-[#8892B0] text-[2rem] font-bold gap-2 items-center mt-[9rem]">
+      <h1 className=" flex text-[#8892b0ae] text-[2rem] font-bold gap-2 items-center mt-[9rem]">
         {" "}
-        <GoPerson className=" text-[2.7rem] text-[#FFD700]" />
+        <GoPerson className=" text-[2rem] text-[#FFD700]" />
         About me
         <hr className="  w-[40%]  bg-[#8892B0] opacity-30" />
       </h1>
