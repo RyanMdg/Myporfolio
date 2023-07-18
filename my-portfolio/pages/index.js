@@ -6,11 +6,32 @@ import Righticon from "../src/app/components/righticon";
 import Hero from "../src/app/components/hero";
 import { Montserrat } from "next/font/google";
 import Footer from "../src/app/components/footer";
+import ReactGa from "react-ga";
+
+const tracking_Id = "G-G95PF7PFS8";
+
+ReactGa.initialize(tracking_Id);
 
 const inter = Montserrat({ subsets: ["latin"] });
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
+
+  const history = useHistory();
+
+  useEffect(() => {
+    // Track page view on initial load
+    ReactGA.pageview(window.location.pathname);
+
+    // Track page views
+    const unlisten = history.listen((location) => {
+      ReactGA.pageview(location.pathname);
+    });
+
+    return () => {
+      unlisten();
+    };
+  }, [history]);
 
   useEffect(() => {
     // Simulate an asynchronous task
