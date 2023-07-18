@@ -14,12 +14,12 @@ const navbar = () => {
   return (
     <nav className=" py-8">
       <div className="  flex justify-between items-center mx-8">
-        <img
+        <a
+          href="/"
           className=" min-[320px]:w-[10%] min-[350px]:w-[10%] min-[440px]:w-[7%] min-[550px]:w-[5%] min-[650px]:w-[3%] min-[800px]:w-[2%] "
-          src="/logo.png"
-          alt=""
-        />
-
+        >
+          <img src="/logo.png" alt="" />
+        </a>
         {/* Hamburger Icon */}
         <div className="min-[750px]:hidden min-[320px]:ms-[19rem] min-[350px]:ms-[19rem] flex items-center">
           <button
@@ -31,7 +31,7 @@ const navbar = () => {
           </button>
         </div>
 
-        <ul className=" max-[750px]:hidden text-[#B5BFDF] gap-6 flex font-semibold">
+        <ul className=" max-[750px]:hidden text-[#B5BFDF] gap-6 flex items-center font-semibold">
           <a href="">
             <li className="flex items-center pb-1 gap-2 link link-underline link-underline-black  ">
               {" "}
@@ -47,6 +47,14 @@ const navbar = () => {
             <li className="flex items-center pb-1 gap-2 link link-underline link-underline-black  ">
               <BiSolidContact className=" text-[1.2rem] text-[#FFD700]" />{" "}
               Contact
+            </li>
+          </a>
+          <a
+            href="https://drive.google.com/file/d/12YuGPhRaG68Aci7JPbVa9mtcFE9fznHp/view?usp=drive_link"
+            className=" border border-[#FFD700] px-3 py-2 rounded-md"
+          >
+            <li className="flex items-center pb-1 gap-2 link link-underline link-underline-black  ">
+              Resume
             </li>
           </a>
         </ul>
@@ -82,6 +90,14 @@ const navbar = () => {
           <a href="">
             <li className="flex items-center font-semibold text-[1.3rem] pb-1 gap-2 link link-underline link-underline-black  ">
               <BiSolidContact className=" text-[2rem] text-[#FFD700]" /> Contact
+            </li>
+          </a>
+          <a
+            href="https://drive.google.com/file/d/12YuGPhRaG68Aci7JPbVa9mtcFE9fznHp/view?usp=drive_link"
+            className=" border border-[#FFD700] px-3 py-2 rounded-md"
+          >
+            <li className="flex items-center pb-1 gap-2 link link-underline link-underline-black  ">
+              Resume
             </li>
           </a>
         </ul>

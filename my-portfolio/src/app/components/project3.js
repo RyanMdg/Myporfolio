@@ -6,17 +6,14 @@ const projects = () => {
   return (
     <div data-aos="fade-up" className="max-[1000px]:hidden mt-20">
       <div className=" relative grid grid-cols-2">
-        <div class="relative">
-          <img
-            class="  z-40 filter w-[100%] rounded-md"
-            src="/groceryhub-mockup.png"
-            alt=""
-          />
-
+        <div class="relative overflow-hidden">
           <a href="https://coachmardee.netlify.app/">
-            {" "}
-            <div class="absolute  z-50 inset-0 rounded-md w-[100%] hover:bg-transparent transition duration-300 bg-[#ffd9001c] bg-opacity-30"></div>
-          </a>
+            <img
+              class=" duration-300 hover:scale-110 z-40 filter w-[100%] rounded-md"
+              src="/groceryhub-mockup.png"
+              alt=""
+            />
+          </a>{" "}
         </div>
         <div className=" text-end me-10 mt-16">
           <span className=" text-[#ffd900]">Featured Project</span>

@@ -31,17 +31,14 @@ const projects = () => {
             </a>
           </span>
         </div>
-        <div class="relative">
-          <img
-            class="  z-40 filter w-[100%] rounded-md"
-            src="/luxwatch-mockup.png"
-            alt=""
-          />
-
+        <div class="relative overflow-hidden">
           <a href="https://luxwatch.netlify.app/?fbclid=IwAR0QNI_QUiCrc2gkPhPAwm-aplp5uHgI_K7OHhuh3hbXrRSqtOEeSBqBpO4">
-            {" "}
-            <div class="absolute  z-40 inset-0 rounded-md w-[100%] hover:bg-transparent transition duration-300 bg-[#ffd9001c] bg-opacity-30"></div>
-          </a>
+            <img
+              class=" duration-300 hover:scale-110 z-40 filter w-[100%] rounded-md"
+              src="/luxwatch-mockup.png"
+              alt=""
+            />
+          </a>{" "}
         </div>
       </div>
     </div>

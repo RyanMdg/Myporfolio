@@ -1,5 +1,6 @@
 import Navbar from "../src/app/components/navbar";
 import "../src/app/globals.css";
+import Footer from "../src/app/components/footer";
 const form = () => {
   return (
     <div>
@@ -9,7 +10,7 @@ const form = () => {
           {/* Row */}
           <div className="w-full relative  xl:w-3/4 lg:w-11/12 flex">
             <img
-              class="w-full h-auto bg-gray-400 hidden lg:block lg:w-5/12 bg-cover rounded-l-lg"
+              class=" bg-gray-400 hidden lg:block lg:w-[50%] bg-cover rounded-l-lg"
               src="/me.jpg"
               alt=""
             />
@@ -108,6 +109,7 @@ const form = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
