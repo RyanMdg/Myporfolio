@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+
+import { useRouter } from "next/router";
 import "../src/app/globals.css";
 import Navbar from "../src/app/components/navbar";
 import Lefticons from "../src/app/components/lefticons";
@@ -11,28 +12,33 @@ import ReactGa from "react-ga";
 
 const tracking_Id = "G-G95PF7PFS8";
 
-ReactGa.initialize(tracking_Id);
+if (typeof window !== "undefined") {
+  ReactGA.initialize(tracking_Id);
+}
 
 const inter = Montserrat({ subsets: ["latin"] });
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
 
-  const history = useHistory();
+  const router = useRouter();
 
   useEffect(() => {
-    // Track page view on initial load
-    ReactGA.pageview(window.location.pathname);
+    // Only initialize if the window object is available (client-side)
+    if (typeof window !== "undefined") {
+      ReactGA.pageview(window.location.pathname);
 
-    // Track page views
-    const unlisten = history.listen((location) => {
-      ReactGA.pageview(location.pathname);
-    });
+      const handleRouteChange = (url) => {
+        ReactGA.pageview(url);
+      };
 
-    return () => {
-      unlisten();
-    };
-  }, [history]);
+      router.events.on("routeChangeComplete", handleRouteChange);
+
+      return () => {
+        router.events.off("routeChangeComplete", handleRouteChange);
+      };
+    }
+  }, [router]);
 
   useEffect(() => {
     // Simulate an asynchronous task
