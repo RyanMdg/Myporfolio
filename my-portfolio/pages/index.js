@@ -8,8 +8,7 @@ import Righticon from "../src/app/components/righticon";
 import Hero from "../src/app/components/hero";
 import { Montserrat } from "next/font/google";
 import Footer from "../src/app/components/footer";
-import ReactGa from "react-ga";
-
+import ReactGA from "react-ga";
 const tracking_Id = "G-G95PF7PFS8";
 
 if (typeof window !== "undefined") {
