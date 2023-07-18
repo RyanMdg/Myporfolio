@@ -19,6 +19,7 @@ const navbar = () => {
           src="/logo.png"
           alt=""
         />
+
         {/* Hamburger Icon */}
         <div className="min-[750px]:hidden min-[320px]:ms-[19rem] min-[350px]:ms-[19rem] flex items-center">
           <button
@@ -62,12 +63,6 @@ const navbar = () => {
           className="text-gray-500  text-2xl flex items-center justify-center relative top-4 right-4 focus:outline-none"
           onClick={toggleMenu}
         >
-          <img
-            className="w-[40%] ms-[12rem] object-contain flex-none"
-            src="/brnd.png"
-            alt=""
-          />
-
           <div className=" absolute max-[750px]:left-[250%] max-[650px]:left-[230%] max-[550px]:left-[180%]  max-[450px]:left-[150%]   top-[.5rem] text-[#FFD700]  text-[1.5rem]">
             &#x2715;
           </div>

@@ -14,16 +14,13 @@ const projects = () => {
       </h1>
 
       <div className=" relative grid grid-cols-2">
-        <div class="relative">
-          <img
-            class="  z-40 filter w-[100%] rounded-md"
-            src="/mardee-mockup.png"
-            alt=""
-          />
-
+        <div class="relative overflow-hidden hover:rounded-md">
           <a href="https://coachmardee.netlify.app/">
-            {" "}
-            <div class="absolute  z-50 inset-0 rounded-md w-[100%] hover:bg-transparent transition duration-300 bg-[#ffd9001c] bg-opacity-30"></div>
+            <img
+              class=" hover:scale-110 duration-300 transition-all  z-40 filter w-[100%] rounded-md "
+              src="/mardee-mockup.png"
+              alt=""
+            />
           </a>
         </div>
         <div className=" text-end me-10 mt-16">
