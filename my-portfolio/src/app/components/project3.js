@@ -33,10 +33,10 @@ const projects = () => {
             <li>MongoDb</li>
           </ul>
           <span className=" flex justify-end gap-4 mt-3">
-            <a href="https://github.com/RyanMdg/PrulifeUKProject">
+            <a href="https://github.com/RyanMdg/Mp-2">
               <AiOutlineGithub className=" hover:text-[#ffd900] text-[1.7rem] text-[#B5BFDF]" />
             </a>
-            <a href="https://coachmardee.netlify.app/">
+            <a href="https://thegroceryhubmp2.vercel.app/">
               <BiLinkExternal className="  hover:text-[#ffd900] text-[1.7rem] text-[#B5BFDF]" />
             </a>
           </span>
