@@ -15,7 +15,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="flex min-h-screen max-[320px]:ms-[1rem] md:max-w-[40rem] max-[750px]:ms-[2rem] lg:max-w-[70rem] mx-auto my-[5rem]">
+    <div className="flex min-h-screen max-w-[80%] mx-auto my-[5rem]">
       <div className="w-max">
         <h1 className="text-[#ffd900c7] animate-span text-[1.1rem]">
           Hi, my name is

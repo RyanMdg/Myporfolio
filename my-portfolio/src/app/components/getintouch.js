@@ -3,7 +3,7 @@ const getintouch = () => {
     <div className=" flex flex-col items-center justify-center text-center mt-28">
       <span className="text-[#ffd900c7]">What's next?</span>
       <h1 className="  text-[#B5BFDF] font-bold text-[2.5rem]">Get In Touch</h1>
-      <p className=" px-[10rem] mb-10 mt-2 text-[#8892B0] font-medium">
+      <p className=" px-[10rem] max-md:px-[1rem] mb-10 mt-2 text-[#8892B0] font-medium">
         After years of dedication and learning, Im now equipped with a wealth of
         knowledge and skills. Now, it's time to put everything i learned into
         action. i want to have a company that will jump-start my career in the
