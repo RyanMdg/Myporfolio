@@ -2,7 +2,7 @@ import { GoPerson } from "react-icons/go";
 import { BiRightArrow } from "react-icons/bi";
 const aboutme = () => {
   return (
-    <div>
+    <div className=" mt-20">
       <h1 className=" flex text-[#8892b0ae] text-[2rem] font-bold gap-2 items-center mt-[9rem]">
         {" "}
         <GoPerson className=" text-[2rem] text-[#FFD700]" />
@@ -63,14 +63,12 @@ const aboutme = () => {
           </div>
         </div>
         <figure className=" relative ms-20 ">
-          <div class="relative">
+          <div class="relative overflow-hidden">
             <img
-              class="  z-40 filter w-[60%] rounded-md"
+              class=" hover:scale-110 duration-300  z-40 filter w-[60%] rounded-md"
               src="/grad.jpg"
               alt=""
             />
-
-            <div class="absolute  z-50 inset-0 rounded-md w-[60%] hover:bg-transparent transition duration-300 bg-[#ffd90039] bg-opacity-30"></div>
           </div>
           <div class="absolute z-[-1] top-10 left-5 inset-0 rounded-md max-[700px]:h-[90%] w-[60%] h-[60%] border-2 border-[#ffd900] bg-opacity-30"></div>
         </figure>

@@ -16,7 +16,7 @@ const navbar = () => {
       <div className="  flex justify-between items-center mx-8">
         <a
           href="/"
-          className=" min-[320px]:w-[10%] min-[350px]:w-[10%] min-[440px]:w-[7%] min-[550px]:w-[5%] min-[650px]:w-[3%] min-[800px]:w-[2%] "
+          className=" min-[320px]:w-[30%] min-[350px]:w-[10%] min-[440px]:w-[7%] min-[550px]:w-[5%] min-[650px]:w-[3%] min-[800px]:w-[2%] "
         >
           <img src="/logo.png" alt="" />
         </a>

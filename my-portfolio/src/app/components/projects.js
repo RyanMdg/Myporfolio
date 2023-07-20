@@ -6,14 +6,14 @@ import Project3 from "./project3";
 
 const projects = () => {
   return (
-    <div data-aos="fade-up" className="max-[1000px]:hidden">
-      <h1 className=" flex mb-12 text-[#CCD6F6] text-[2rem] font-bold gap-2 items-center mt-[9rem]">
+    <div data-aos="fade-up" className="max-[1000px]:hidden mt-20">
+      <h1 className=" flex mb-20 text-[#CCD6F6] text-[2rem] font-bold gap-2 items-center mt-[9rem]">
         {" "}
         <CgWebsite className=" text-[2rem] text-[#FFD700]" /> Projects
         <hr className="  w-[40%]  bg-[#8892B0] opacity-30" />
       </h1>
 
-      <div className=" relative grid grid-cols-2">
+      <div className=" relative mt-16 grid grid-cols-2">
         <div class="relative overflow-hidden hover:rounded-md">
           <a href="https://coachmardee.netlify.app/">
             <img
